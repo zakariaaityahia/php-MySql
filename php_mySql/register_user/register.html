@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <h2>Register</h2>
+    <form action="register.php" method="post">
+        <table>
+            <tr>
+                <td>
+                    <label for="username">Username:</label>
+                </td>
+                <td>
+                    <input type="text" id="username" name="username" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="password">Password:</label>
+                </td>
+                <td>
+                    <input type="password" id="password" name="password" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="role">Role:</label>
+                </td>
+                <td>
+                    <select id="role" name="role" style="width: 100%;" required>
+                        <option value="admin">Admin</option>
+                        <option value="editor">Editor</option>
+                        <option value="author">Author</option>
+                        <option value="guest">Guest</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" style="width: 50%; margin-top: 10px;" value="Register">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
